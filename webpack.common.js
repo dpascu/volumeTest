@@ -35,6 +35,11 @@ module.exports = {
       to: path.join(__dirname, 'dist', 'img'),
       toType: 'dir',
     }]),
+    new CopyWebpackPlugin([{
+      from: path.join(__dirname, 'src', 'media'),
+      to: path.join(__dirname, 'dist', 'media'),
+      toType: 'dir',
+    }]),
   ],
 
   // transformations
