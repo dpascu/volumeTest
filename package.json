@@ -1,0 +1,63 @@
+{
+  "name": "baseProject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --open --config webpack.dev.js",
+    "build": "./node_modules/.bin/webpack --config webpack.prod.js",
+    "test": "jest",
+    "lint": "eslint src/js/*.*"
+  },
+  "jest": {
+    "setupFiles": [
+      "./jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.2.0",
+    "babel-loader": "^7.1.4",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^4",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0",
+    "ignore-loader": "^0.1.2",
+    "jest": "^23.2.0",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.9.0",
+    "react-addons-test-utils": "^15.6.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  },
+  "dependencies": {
+    "babel-core": "6",
+    "copy-webpack-plugin": "^4.5.2",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.10",
+    "react": "^16",
+    "react-dom": "^16"
+  }
+}
