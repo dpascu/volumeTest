@@ -5,7 +5,17 @@ body {
     font-family: Arial, sans-serif;
   }
 
-  .video-full {
-    width: 100%;
+  #app {
+    .layer {
+      position: absolute;
+      top: 0;
+      color: white;
+      font-size: 60px;
+      padding: 20px;
+    }
+
+    .video-full {
+      width: 100%;
+    }
   }
 }
