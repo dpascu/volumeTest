@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './HelloWorld';
-import Image from './Image';
+import Home from './containers/Home';
 import CSS from './../css/main.scss'; // eslint-disable-line
 
 /* global document */
 
 ReactDOM.render(
-  <div>
-    <Image />
-    <HelloWorld />
-  </div>,
+  <Home />,
   document.getElementById('app'),
 );
