@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Video component
+ * @param {Object} props
+ */
 const Video = ({ src }) => (
   <video autoPlay className="video-full">
     <track kind="captions" />
