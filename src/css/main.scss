@@ -1,21 +1,61 @@
 body {
+  background: #000;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 
   p {
     font-family: Arial, sans-serif;
   }
 
   #app {
+    position: relative;
+
     .layer {
       position: absolute;
-      top: 0;
-      color: white;
-      font-size: 60px;
       padding: 20px;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .layer.left-up {
+      top: 0;
+      left: 0;
+    }
+
+    .layer.left-down {
+      top: 100%;
+      transform: translateY(-100%);
+      left: 0;
+    }
+
+    .layer.right-up {
+      top: 0;
+      right: 0;
+    }
+
+    .layer.right-down {
+      top: 100%;
+      right: 0;
+      transform: translateY(-100%);
     }
 
     .video-full {
       width: 100%;
+    }
+
+    .weather {
+      color: white;
+
+      .location {
+        color: #928e87;
+        font-size: 25px;
+        letter-spacing: 7px;
+      }
+
+      .temperature {
+        color: #d2be51;
+        font-size: 50px;
+        letter-spacing: -3px;
+      }
     }
   }
 }
