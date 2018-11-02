@@ -24,8 +24,8 @@ class Home extends PureComponent {
     this.isUnmounted = false;
   }
 
-  componentDidMount() {
-    this.fetchWeather();
+  async componentDidMount() {
+    await this.fetchWeather();
     this.intervalWeather = setInterval(() => this.fetchWeather(), 30000);
     this.intervalPosition = setInterval(() => this.nextLayerPosition(), 5000);
   }
