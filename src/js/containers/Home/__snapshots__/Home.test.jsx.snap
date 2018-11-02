@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container Home should render container 1`] = `
+Array [
+  <div
+    className="layer left-up"
+  >
+    <div
+      className="weather"
+    >
+      <img
+        alt="loading"
+        src="../../../img/loader.gif"
+      />
+    </div>
+  </div>,
+  <video
+    autoPlay={true}
+    className="video-full"
+  >
+    <track
+      kind="captions"
+    />
+    <source
+      src="../../../media/video.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>,
+]
+`;

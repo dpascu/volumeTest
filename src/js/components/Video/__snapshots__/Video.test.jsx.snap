@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Video should render component 1`] = `
+<video
+  autoPlay={true}
+  className="video-full"
+>
+  <track
+    kind="captions"
+  />
+  <source
+    src="../../../media/video.mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
+`;

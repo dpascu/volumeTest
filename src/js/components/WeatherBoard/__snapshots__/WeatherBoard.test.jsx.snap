@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component WeatherBoard should render component 1`] = `
+<div
+  className="weather"
+>
+  <img
+    alt="loading"
+    src="../../../img/loader.gif"
+  />
+</div>
+`;
+
+exports[`Component WeatherBoard should render component 2`] = `
+<div
+  className="weather"
+>
+  <div
+    className="location"
+  >
+    London
+  </div>
+  <div>
+    <img
+      alt="icon"
+      src="http://openweathermap.org/img/w/000.png"
+    />
+    <span
+      className="temperature"
+    >
+      12.0º
+    </span>
+  </div>
+</div>
+`;
