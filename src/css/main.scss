@@ -3,16 +3,14 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 
-  p {
-    font-family: Arial, sans-serif;
-  }
-
   #app {
+    z-index: 0;
     position: relative;
 
     .layer {
+      z-index: 2;
       position: absolute;
-      padding: 20px;
+      padding: 30px;
       background: rgba(0,0,0,0.5);
     }
 
