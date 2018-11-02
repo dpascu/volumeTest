@@ -26,7 +26,7 @@ class Home extends PureComponent {
 
   componentDidMount() {
     this.fetchWeather();
-    this.intervalWeather = setInterval(() => this.fetchWeather(), 10000);
+    this.intervalWeather = setInterval(() => this.fetchWeather(), 30000);
     this.intervalPosition = setInterval(() => this.nextLayerPosition(), 5000);
   }
 
